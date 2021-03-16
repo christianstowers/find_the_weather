@@ -15,6 +15,9 @@
 		B809283E26004A2B006C2E18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809281326004A29006C2E18 /* ContentView.swift */; };
 		B809283F26004A2B006C2E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B809281426004A2B006C2E18 /* Assets.xcassets */; };
 		B809284026004A2B006C2E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B809281426004A2B006C2E18 /* Assets.xcassets */; };
+		B809285A26004FCC006C2E18 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809285926004FCC006C2E18 /* API.swift */; };
+		B80928652600507D006C2E18 /* API+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80928642600507D006C2E18 /* API+Extensions.swift */; };
+		B809286F260055E5006C2E18 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809286E260055E5006C2E18 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B809283426004A2B006C2E18 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B809283826004A2B006C2E18 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B809283A26004A2B006C2E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B809285926004FCC006C2E18 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B80928642600507D006C2E18 /* API+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Extensions.swift"; sourceTree = "<group>"; };
+		B809286E260055E5006C2E18 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,11 @@
 		B809281126004A29006C2E18 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B809285826004F80006C2E18 /* LottieAnimations */,
+				B809285726004F71006C2E18 /* ViewModels */,
+				B809285626004F6A006C2E18 /* Views */,
+				B809285526004F64006C2E18 /* Models */,
+				B809285326004F37006C2E18 /* Networking */,
 				B809281226004A29006C2E18 /* Find_The_WeatherApp.swift */,
 				B809281326004A29006C2E18 /* ContentView.swift */,
 				B809281426004A2B006C2E18 /* Assets.xcassets */,
@@ -149,6 +160,44 @@
 				B809283A26004A2B006C2E18 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		B809285326004F37006C2E18 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B809285926004FCC006C2E18 /* API.swift */,
+				B80928642600507D006C2E18 /* API+Extensions.swift */,
+				B809286E260055E5006C2E18 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B809285526004F64006C2E18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B809285626004F6A006C2E18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B809285726004F71006C2E18 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B809285826004F80006C2E18 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LottieAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80928652600507D006C2E18 /* API+Extensions.swift in Sources */,
 				B809283D26004A2B006C2E18 /* ContentView.swift in Sources */,
+				B809286F260055E5006C2E18 /* NetworkManager.swift in Sources */,
+				B809285A26004FCC006C2E18 /* API.swift in Sources */,
 				B809283B26004A2B006C2E18 /* Find_The_WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
