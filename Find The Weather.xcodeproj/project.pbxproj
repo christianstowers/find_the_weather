@@ -18,6 +18,11 @@
 		B809285A26004FCC006C2E18 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809285926004FCC006C2E18 /* API.swift */; };
 		B80928652600507D006C2E18 /* API+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80928642600507D006C2E18 /* API+Extensions.swift */; };
 		B809286F260055E5006C2E18 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809286E260055E5006C2E18 /* NetworkManager.swift */; };
+		B8A44B2B260C088900B64D2A /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B2A260C088900B64D2A /* WeatherResponse.swift */; };
+		B8A44B31260C08B900B64D2A /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B30260C08B900B64D2A /* Weather.swift */; };
+		B8A44B37260C08C600B64D2A /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B36260C08C600B64D2A /* WeatherDetail.swift */; };
+		B8A44B3D260C08D400B64D2A /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B3C260C08D400B64D2A /* DailyWeather.swift */; };
+		B8A44B43260C08E300B64D2A /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B42260C08E300B64D2A /* Temperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		B809285926004FCC006C2E18 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B80928642600507D006C2E18 /* API+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Extensions.swift"; sourceTree = "<group>"; };
 		B809286E260055E5006C2E18 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B8A44B2A260C088900B64D2A /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		B8A44B30260C08B900B64D2A /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B8A44B36260C08C600B64D2A /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
+		B8A44B3C260C08D400B64D2A /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
+		B8A44B42260C08E300B64D2A /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +185,11 @@
 		B809285526004F64006C2E18 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B8A44B2A260C088900B64D2A /* WeatherResponse.swift */,
+				B8A44B30260C08B900B64D2A /* Weather.swift */,
+				B8A44B36260C08C600B64D2A /* WeatherDetail.swift */,
+				B8A44B3C260C08D400B64D2A /* DailyWeather.swift */,
+				B8A44B42260C08E300B64D2A /* Temperature.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -358,10 +373,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B80928652600507D006C2E18 /* API+Extensions.swift in Sources */,
+				B8A44B37260C08C600B64D2A /* WeatherDetail.swift in Sources */,
+				B8A44B2B260C088900B64D2A /* WeatherResponse.swift in Sources */,
 				B809283D26004A2B006C2E18 /* ContentView.swift in Sources */,
 				B809286F260055E5006C2E18 /* NetworkManager.swift in Sources */,
 				B809285A26004FCC006C2E18 /* API.swift in Sources */,
 				B809283B26004A2B006C2E18 /* Find_The_WeatherApp.swift in Sources */,
+				B8A44B31260C08B900B64D2A /* Weather.swift in Sources */,
+				B8A44B43260C08E300B64D2A /* Temperature.swift in Sources */,
+				B8A44B3D260C08D400B64D2A /* DailyWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,9 +543,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V7VULT4R8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,9 +565,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V7VULT4R8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

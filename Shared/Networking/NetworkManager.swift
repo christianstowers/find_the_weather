@@ -10,9 +10,11 @@ import Foundation
 //TODO -> what is the Codable protocol?
 //TODO -> video stopped at 31:01 ( https://www.youtube.com/watch?v=KI6Yf7VMefc )
 
+// NetworkManager is responsible for making all of the API calls
+
 final class NetworkManager<T: Codable> {
     static func fetch(for url:URL, completion: @escaping (Result<T, NetworkError>) -> Void) {
-        URLSession.shared.dataTask(with: url) { (data, response, error)
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
                 print(String(describing: error!))
                 completion(.failure(.error(err: error!.localizedDescription)))
@@ -32,8 +34,11 @@ final class NetworkManager<T: Codable> {
             do {
                 let json = try JSONDecoder().decode(T.self, from: data)
                 completion(.success(json))
+            } catch let err {
+                print(String(describing: err))
+                completion(.failure(.decodingError(err: err.localizedDescription)))
             }
-        }
+        }.resume()
     }
 }
 
@@ -41,4 +46,5 @@ enum NetworkError: Error {
     case invalidResponse
     case invalidData
     case error(err: String)
+    case decodingError(err: String)
 }
