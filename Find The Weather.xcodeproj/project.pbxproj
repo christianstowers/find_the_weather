@@ -23,6 +23,7 @@
 		B8A44B37260C08C600B64D2A /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B36260C08C600B64D2A /* WeatherDetail.swift */; };
 		B8A44B3D260C08D400B64D2A /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B3C260C08D400B64D2A /* DailyWeather.swift */; };
 		B8A44B43260C08E300B64D2A /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A44B42260C08E300B64D2A /* Temperature.swift */; };
+		B8C662C3260D69280095A265 /* CityViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C662C2260D69280095A265 /* CityViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B8A44B36260C08C600B64D2A /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		B8A44B3C260C08D400B64D2A /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		B8A44B42260C08E300B64D2A /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		B8C662C2260D69280095A265 /* CityViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		B809285726004F71006C2E18 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B8C662C2260D69280095A265 /* CityViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B80928652600507D006C2E18 /* API+Extensions.swift in Sources */,
+				B8C662C3260D69280095A265 /* CityViewViewModel.swift in Sources */,
 				B8A44B37260C08C600B64D2A /* WeatherDetail.swift in Sources */,
 				B8A44B2B260C088900B64D2A /* WeatherResponse.swift in Sources */,
 				B809283D26004A2B006C2E18 /* ContentView.swift in Sources */,
