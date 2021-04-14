@@ -25,8 +25,9 @@ struct CityNameView: View {
 
 struct CityNameView_Previews: PreviewProvider {
     static var previews: some View {
-        CityNameView(city: <#String#>, date: <#String#>)
+        ContentView()
     }
 }
 
 // 04/12 stopped at 1:38:27. Mine is requiring that I provide city and date within the CityNameView part of line 28 but not on his. Why?
+// 04/14 b/c the tutorial uses ConetentView(). Oops.
