@@ -55,7 +55,7 @@
 		B809281226004A29006C2E18 /* Find_The_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_The_WeatherApp.swift; sourceTree = "<group>"; };
 		B809281326004A29006C2E18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B809281426004A2B006C2E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B809281926004A2B006C2E18 /* Find The Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find The Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B809281926004A2B006C2E18 /* Weather Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B809281C26004A2B006C2E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B809282126004A2B006C2E18 /* Find The Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find The Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B809282326004A2B006C2E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		B809281A26004A2B006C2E18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B809281926004A2B006C2E18 /* Find The Weather.app */,
+				B809281926004A2B006C2E18 /* Weather Finder.app */,
 				B809282126004A2B006C2E18 /* Find The Weather.app */,
 				B809282926004A2B006C2E18 /* Tests iOS.xctest */,
 				B809283426004A2B006C2E18 /* Tests macOS.xctest */,
@@ -261,7 +261,7 @@
 				B841F0D52618F7990041C8FE /* Lottie */,
 			);
 			productName = "Find The Weather (iOS)";
-			productReference = B809281926004A2B006C2E18 /* Find The Weather.app */;
+			productReference = B809281926004A2B006C2E18 /* Weather Finder.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B809282026004A2B006C2E18 /* Find The Weather (macOS) */ = {
@@ -592,7 +592,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "test.Find-The-Weather";
-				PRODUCT_NAME = "Find The Weather";
+				PRODUCT_NAME = "Weather Finder";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,7 +614,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "test.Find-The-Weather";
-				PRODUCT_NAME = "Find The Weather";
+				PRODUCT_NAME = "Weather Finder";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
