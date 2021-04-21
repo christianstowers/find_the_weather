@@ -13,7 +13,7 @@ import Foundation
 // NetworkManager is responsible for making all of the API calls
 
 final class NetworkManager<T: Codable> {
-    static func fetch(for url:URL, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    static func fetch(for url: URL, completion: @escaping (Result<T, NetworkError>) -> Void) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
                 print(String(describing: error!))
@@ -38,6 +38,7 @@ final class NetworkManager<T: Codable> {
                 print(String(describing: err))
                 completion(.failure(.decodingError(err: err.localizedDescription)))
             }
+            
         }.resume()
     }
 }
